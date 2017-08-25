@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+		<!-- Good default declaration:
+		* gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+		* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+		* Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+			* Enable inline JS: add 'unsafe-inline' to default-src
+			* Enable eval(): add 'unsafe-eval' to default-src
+		* Create your own at http://cspisawesome.com
+		-->
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+		<link rel="stylesheet" href="./css/core.css" />
+		
+		<title>Offline MBTiles</title>
+		
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="lib/proj4js/proj4.js"></script>
+		<script type="text/javascript" src="lib/leaflet-rd/leaflet-rd.js"></script>
+		<script type="text/javascript" src="lib/pbf/index.js"></script>
+		<script type="text/javascript" src="lib/vector-tile/index.js"></script>
+		<script type="text/javascript" src="lib/leaflet.vectorgrid/src/Leaflet.VectorGrid.Protobuf.js"></script>
+		<script type="text/javascript" src="lib/concat-stream/index.js"></script>
+		<script type="text/javascript" src="lib/geobuf/index.js"></script>
+		<script type="text/javascript" src="js/mbtiles-layer.js"></script>
+		<script type="text/javascript" src="js/mbvector-layer.js"></script>
+		<script type="text/javascript" src="js/core.js"></script>
+	</head>
+	<body onload="onBodyLoad()">
+		<div id="map"></div>
+	</body>
+</html>

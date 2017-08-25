@@ -1,0 +1,31 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "nl.idgis.mbtiles"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "nl.idgis.mbtiles"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "nl.idgis.mbtiles"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "nl.idgis.mbtiles"
+        },
+        "cordova-sqlite-evcore-extbuild-free": {
+            "PACKAGE_NAME": "nl.idgis.mbtiles"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "nl.idgis.mbtiles"
+        }
+    }
+}
